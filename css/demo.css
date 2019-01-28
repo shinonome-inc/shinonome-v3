@@ -35,9 +35,8 @@
 
 
 /* Main styles */
-
 body {
-	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, 'FP-ヒラギノUD角ゴF StdN W6', sans-serif;
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, "FOT-UD角ゴ_スモール Pr6 DB", sans-serif !important;
 	margin: 0;
 	color: #555;
 	background: #edeef1;
@@ -265,4 +264,47 @@ article.card .content p {
 	.bp-header__title {
 		font-size: 1.8em;
 	}
+}
+
+
+.blobs {
+
+}
+
+.blobs .blob .content {
+	position: relative;
+	z-index: 1;
+}
+.blobs .blob .content:after {
+	display: block;
+	content: "";
+	padding-top: 100%;
+}
+.blobs .blob .content h2 {
+	font-family: "TazuganeGothicStdN-Medium";
+    font-size: 33px;
+    font-weight: bold;
+    color: #000;
+    line-height: 40px;
+}
+.blobs .blob .content p {
+	font-size: 18px;
+    line-height: 32px;
+    color: #444;
+    font-weight: bold;
+}
+
+.blobs .blob svg {
+	position: absolute;
+    left: 10%;
+    right: 10%;
+	width: 80%;
+	top: 0;
+	height: auto;
+	z-index: 0;
+}
+
+#description h1 {
+	color: black;
+    font-size: 48px;
 }
