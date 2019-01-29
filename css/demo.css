@@ -75,7 +75,8 @@ a:hover {
 }
 
 .bp-header__desc {
-	font-size: 0.95em;
+	font-weight: bold;
+	font-size: 0.85em;
 	margin: 0.5em 0 1em;
 	padding: 0;
 }
@@ -266,6 +267,14 @@ article.card .content p {
 	}
 }
 
+.hero-image {
+	max-width: 100%;
+}
+
+.people-image {
+	margin-top: -60px;
+	max-width: 100%;
+}
 
 .blobs {
 
@@ -278,7 +287,6 @@ article.card .content p {
 .blobs .blob .content:after {
 	display: block;
 	content: "";
-	padding-top: 100%;
 }
 .blobs .blob .content h2 {
 	font-family: "TazuganeGothicStdN-Medium";
@@ -304,7 +312,33 @@ article.card .content p {
 	z-index: 0;
 }
 
-#description h1 {
+#description, #where {
+	padding-bottom: 180px;
+}
+
+#description h1, #where h1 {
 	color: black;
-    font-size: 48px;
+	font-size: 48px;
+}
+
+#description, #where p {
+	font-weight: bold;
+}
+.text-effect {
+	display: inline-block;
+	cursor: pointer;
+}
+.text-effect:hover {
+	-webkit-animation: zoom .6s;
+	animation: zoom .6s;
+}
+@-webkit-keyframes zoom {
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+}
+@keyframes zoom {
+  50% {
+    transform: scale(1.05);
+  }
 }

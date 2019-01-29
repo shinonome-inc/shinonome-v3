@@ -51,9 +51,12 @@
 		// check if menu is open
 		isMenuOpen = false;
 
-	function init() {
+	function init() {	
 		buildStack();
 		initEvents();
+		if(window.location.hash){
+			openPage(window.location.hash.split("#")[1])
+		}
 	}
 
 	function buildStack() {
@@ -211,6 +214,7 @@
 			// reorganize stack
 			buildStack();
 			isMenuOpen = false;
+			// window.location.hash = "#"+id
 		});
 	}
 
