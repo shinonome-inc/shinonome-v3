@@ -17,6 +17,7 @@
   <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   <link href="animations.css" rel="stylesheet"><link href="animations-index.css" rel="stylesheet">
   <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?DW9F4iBjxt8%3D&box=HVVn-jXmOPU%3D&aa=1&ab=2" charset="utf-8"></script>
+  <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -207,6 +208,26 @@
           </div>
         </div>
       </section>
+      <section id="about">
+        <div class="container">
+          <div class="grid">
+            <div class="grid__item grid__item--bg theme-2">
+              <div class="grid__item-img" data-displacement="img/displacement/8.jpg" data-intensity="-0.65" data-speedIn="1.2" data-speedOut="1.2">
+                <img src="img/window1.png" alt="Image"/>
+                <img src="img/window2.png" alt="Image"/>
+              </div>
+              <div class="grid__item-content">
+                <span class="grid__item-meta">Our Vision</span>
+                <h2 class="grid__item-title">Through the window to make future.</h2>
+                <h3 class="grid__item-subtitle">
+                  <span>Dawn was going to break. Let's create new world.</span>
+                  <a class="grid__item-link" href="#">Read more</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="where">
         <div class="container">
           <h1 class="bp-header__title mb-2 mt-5">WHERE WE ARE</h1>
@@ -333,6 +354,30 @@
   <button class="menu-button"><span>Menu</span></button>
   <script src="js/classie.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+		<script src="js/hover.js"></script>
+		<script>
+			imagesLoaded( document.querySelectorAll('img'), () => {
+				document.body.classList.remove('loading');
+			});
+
+			Array.from(document.querySelectorAll('.grid__item-img')).forEach((el) => {
+				const imgs = Array.from(el.querySelectorAll('img'));
+				new hoverEffect({
+					parent: el,
+					intensity: el.dataset.intensity || undefined,
+					speedIn: el.dataset.speedin || undefined,
+					speedOut: el.dataset.speedout || undefined,
+					easing: el.dataset.easing || undefined,
+					hover: el.dataset.hover || undefined,
+					image1: imgs[0].getAttribute('src'),
+					image2: imgs[1].getAttribute('src'),
+					displacementImage: el.dataset.displacement
+				});
+			});
+		</script>
 </body>
 
 </html>
