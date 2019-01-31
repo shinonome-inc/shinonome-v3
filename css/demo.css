@@ -977,6 +977,7 @@ article.card .content p {
   }
   #about .grid__item-title {
     font-size: 5.6vw;
+    display: block;
   }
   #about .grid__item-title--small {
     font-size: 3vw;

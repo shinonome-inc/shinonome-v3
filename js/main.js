@@ -42,7 +42,7 @@
 		// menu button
 		menuCtrl = document.querySelector('button.menu-button'),
 
-    dataLink = document.querySelector('[data-link]'),
+    dataLink = document.querySelectorAll('[data-link]'),
 
 		// the navigation wrapper
 		nav = document.querySelector('.pages-nav'),
@@ -101,7 +101,10 @@
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
 
-    dataLink.addEventListener('click', movePage);
+		dataLink.forEach(function(event){
+			event.addEventListener('click', movePage);
+		})
+
 
 		// navigation menu clicks
 		navItems.forEach(function(item) {
