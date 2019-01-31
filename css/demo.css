@@ -316,6 +316,10 @@ article.card .content p {
 	padding-bottom: 180px;
 }
 
+#description {
+  padding-bottom: 26em;
+}
+
 #description h1, #where h1 {
 	color: black;
 	font-size: 48px;
@@ -534,6 +538,15 @@ article.card .content p {
     transform: scale3d(0.5, 0.5, 1);
   }
 }
+#about {
+  padding: 0em 0 2em;
+}
+#about .divider svg path {
+  fill: #f2f6fc;
+}
+#about .about-background {
+  background: #f2f6fc;
+}
 #about a {
   text-decoration: none;
   color: var(--color-link);
@@ -615,6 +628,16 @@ article.card .content p {
   margin: 0.15em;
   padding: 0.25em;
 }
+
+#about .container {
+  text-align: center;
+}
+
+#about .grid {
+  display: inline-block;
+  margin-top: -240px;
+}
+
 #about .grid__item {
 	border-radius: 64px;
 	overflow: hidden;
@@ -651,7 +674,8 @@ article.card .content p {
 #about .grid__item-img canvas {
 	height: 100%;
 	position: absolute;
-	top: 0;
+  top: 0;
+  left: 0;
 }
 #about .grid__item-img img {
   height: 100%;
@@ -714,6 +738,7 @@ article.card .content p {
   padding: 0 0 0.2rem;
   pointer-events: auto;
   color: var(--item-link);
+  cursor: pointer;
 }
 #about .grid__item-link:focus, #about .grid__item-link:hover {
   color: var(--item-link-hover);
@@ -722,7 +747,7 @@ article.card .content p {
   content: '';
   position: absolute;
   background: currentColor;
-  width: 80%;
+  width: 100%;
   height: 1px;
   bottom: 0;
   transform-origin: 0% 50%;
@@ -952,8 +977,9 @@ article.card .content p {
 }
 @media screen and (min-width: 50em) {
   #about .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 50vmax);
+    /* display: grid; */
+    display: inline-block;
+    /* grid-template-columns: repeat(2, 50vmax); */
   }
   #about .grid__item {
     height: 50vmax;
@@ -977,7 +1003,7 @@ article.card .content p {
   }
   #about .grid__item-title {
     font-size: 5.6vw;
-    display: block;
+    display: block; 
   }
   #about .grid__item-title--small {
     font-size: 3vw;
