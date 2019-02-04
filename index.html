@@ -253,10 +253,12 @@
           </div>
         </div>
       </section>
-      <section id="where">
+      <section id="member">
         <div class="container">
-
-        </div>
+          <h2>
+            Come and join us as <span id="next-number"></span>th member!
+          </h2>
+        </div>          
       </section>
     </div>
     <!-- /page -->
@@ -392,7 +394,6 @@
         loadJSON(function(response) {
         // Parse JSON string into object
         var actual_JSON = JSON.parse(response);
-        console.log("kitayo", actual_JSON)
         actual_JSON.forEach((data, index) => {
           const effect = '<div class="effect-wrap"><div class="intro-banner-vdo-play-btn '+color[data.type]+'"><span class="ripple '+color[data.type]+'"></span></div></div>'
           $("#news-items").append(
@@ -400,7 +401,7 @@
           )
         })
 
-        $('.regular').slick({
+        $('#news-items').slick({
           centerMode: true,
           slidesToShow: 1,
           adaptiveHeight: true,
@@ -430,6 +431,19 @@
             }
           ]
         });
+      });
+      const getData = function(){
+        return $.ajax({
+          type: 'GET',
+          url: 'https://api.github.com/orgs/shinonome-inc/members?per_page=1000',
+          contenttype: 'application/vnd.github.v3+json'
+        })
+      }
+      getData().done(function(result) {
+        result.forEach(function(data,index){
+          $("#next-number").text(result.length)
+        })
+      }).fail(function(result) {
       });
     })
 

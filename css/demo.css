@@ -274,8 +274,11 @@ a:hover {
 	z-index: 0;
 }
 
-#description, #where {
+#description {
 	padding-bottom: 180px;
+}
+#where {
+  padding-bottom: 120px;
 }
 
 #description {
@@ -1143,3 +1146,17 @@ a:hover {
   -webkit-animation-delay:.6s
 }
 /* ----------------------------------- */
+
+#member {
+  background-color: #000;
+  color: white;
+  padding: 40px 0;
+}
+#member h2 {
+  font-weight: bold;
+  font-family: inherit;
+  text-align: center;
+}
+#member h2 #next-number {
+  color: #ffc107;
+}
