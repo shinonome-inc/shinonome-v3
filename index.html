@@ -239,19 +239,8 @@
         <div class="divider divider--curve">
           <svg viewBox="0 0 1695 72" preserveAspectRatio="none" style="transform: scale(1,-1);"><path d="M0 0c282.5 45 565 67.5 847.5 67.5S1412.5 45 1695 0v72H0V0z" fill="rgba(250, 250, 250, 1.0)" fill-rule="evenodd"></path></svg>
         </div>
-        <div class="container">
-          <section class="regular slider">
-            <article>
-              <div class="effect-wrap">
-                <div class="intro-banner-vdo-play-btn pinkBg">
-                  <span class="ripple pinkBg"></span>
-                  <span class="ripple pinkBg"></span>
-                  <!-- <span class="ripple pinkBg"></span> -->
-                </div>
-              </div>
-            </article>
-          </section>
-        </div>
+        <section id="news-items" class="regular slider">
+        </section>
       </section>
       <section id="where">
         <div class="container">
@@ -399,17 +388,48 @@
     }
 
     $(function(){
-      loadJSON(function(response) {
+      const color = {"info": "pinkBg", "award": "blueBg", "event": "greenBg"}
+        loadJSON(function(response) {
         // Parse JSON string into object
         var actual_JSON = JSON.parse(response);
         console.log("kitayo", actual_JSON)
-      });
-      $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplay: true,
+        actual_JSON.forEach((data, index) => {
+          const effect = '<div class="effect-wrap"><div class="intro-banner-vdo-play-btn '+color[data.type]+'"><span class="ripple '+color[data.type]+'"></span></div></div>'
+          $("#news-items").append(
+            "<article class='news-item'><div class='d-flex'>"+effect+"<div class='col px-3'><h2>"+data.title+"</h2><div class='date "+data.type+"'>"+data.date+"</div></div></div><p class='p-2'>"+data.description+"</p></article>"
+          )
+        })
+
+        $('.regular').slick({
+          centerMode: true,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          dots: true,
+          variableWidth: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
       });
     })
 
