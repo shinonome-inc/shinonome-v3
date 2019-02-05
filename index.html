@@ -29,13 +29,17 @@
   <script>
     $(function(){
       let point = $(".blobs")[0].offsetTop
+      let timer = null;
       $("#page-home").on("scroll", function(){
-        if(this.scrollTop > point * 0.2 && this.scrollTop < point * 0.5 ){
-          let diff = parseInt((this.scrollTop - point * 0.2) / 5)
-          $(".blobs .blob svg").css({
-            top: diff
-          })
-        }
+        clearTimeout( timer );
+        timer = setTimeout(function() {
+          if(this.scrollTop > point * 0.2 && this.scrollTop < point * 0.5 ){
+            let diff = parseInt((this.scrollTop - point * 0.2) / 5)
+            $(".blobs .blob svg").css({
+              top: diff
+            })
+          }
+        }, 500 );
       })
     })
   </script>
