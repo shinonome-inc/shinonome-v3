@@ -8,7 +8,7 @@
   <meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
   <meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
   <meta name="author" content="Codrops" />
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="./img/favicon.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -76,7 +76,7 @@
       <header class="bp-header cf">
         <h1 class="bp-header__title">Shinonome, inc.</h1>
         <p class="bp-header__desc mb-5">全人類が革新的な夢を実現するための文化を作る</p>
-        <svg class="svg-header" width="560px" height="204px" viewBox="0 0 1729 633" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg class="svg-header d-none d-md-block" width="560px" height="204px" viewBox="0 0 1729 633" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <desc>Created with Sketch.</desc>
             <defs>
                 <path d="M155.469635,0 L3554.75556,0 L3674.25347,1478 C3389.27938,1145.64352 2902.03768,979.465283 2212.52837,979.465283 C1544.43516,979.465283 1599.90743,602.910342 514.534877,602.910342 C379.789878,602.910342 208.278253,563.188262 0,483.744103 L155.469635,0 Z" id="path-1"></path>
@@ -120,7 +120,7 @@
           </div>
           <h1 class="bp-header__title mb-5 mt-5">WHAT WE DO</h1>
           <div class="row blobs">
-            <div class="col-12 pb-5 mb-5 pb-lg-0 mb-lg-0 col-lg-4 blob">
+            <div class="col-12 pb-0 mb-5 pb-md-5 mb-lg-0 col-lg-4 blob">
               <div class="content">
                  <h2 class="text-effect mb-4 pt-5" data-link="Educational-Infrastructure">
                     <span style="color: rgb(209,78,102)">E</span>ducational<br/>Infrastructure
@@ -141,7 +141,7 @@
                 </g>
               </svg>
             </div>
-            <div class="col-12 pb-5 mb-5 pb-lg-0 mb-lg-0 col-lg-4 blob">
+            <div class="col-12 pb-0 mb-5 pb-md-5 mb-lg-0 col-lg-4 blob">
               <div class="content">
                  <h2 class="text-effect mb-4 pt-5" data-link="Research-and-Development">
                     <span style="color: rgb(90,165,186)">R</span>esearch &<br/>Development
@@ -162,7 +162,7 @@
                 </g>
               </svg>
             </div>
-            <div class="col-12 pb-5 mb-5 pb-lg-0 mb-lg-0 col-lg-4 blob">
+            <div class="col-12 pb-0 mb-5 pb-md-5 mb-lg-0 col-lg-4 blob">
               <div class="content">
                 <h2 class="text-effect mb-4 pt-5" data-link="Hatching-Egg">
                     <span style="color: #fbc932">H</span>atching<br/>Egg
@@ -187,15 +187,16 @@
         </div>
       </section>
       <section id="family">
+        <div class="container">
+          <h1 class="bp-header__title mb-5 mt-5">Worked with...</h1>
+        </div>
         <ul>
           <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/lixil.png" /></li>
+          <li><img src="./img/videx.png" /></li>
+          <li><img src="./img/waaq.png" /></li>
+          <li><img src="./img/meiden.png" /></li>
+          <li><img src="./img/sbcloud.png" /></li>
+          <li><img src="./img/hbi.png" /></li>
         </ul>
       </section>
       <section id="about">
@@ -210,7 +211,7 @@
                 </div>
                 <div class="grid__item-content">
                   <span class="grid__item-meta">Our Vision</span>
-                  <h2 class="grid__item-title">The dawn was going to break.</h2>
+                  <h2 class="grid__item-title">Be a window connecting to something.</h2>
                   <h3 class="grid__item-subtitle">
                     <span>Through the window, <br> the dawn of the future can be seen.</span>
                     <div class="grid__item-link" data-link="company">Read more</div>
@@ -231,7 +232,7 @@
       <section id="where">
         <div class="container">
           <h1 class="bp-header__title mb-2 mt-5">WHERE WE ARE</h1>
-          <p>全国に私たちと活動を共にするクリエーターと、拠点があります。 </p>
+          <p class="mt-3">全国に私たちと活動を共にするクリエーターと、拠点があります。 </p>
           <div class="row">
             <div class="col"></div>
             <img class="people-image" src="./newpeople.svg">
@@ -242,21 +243,21 @@
       <section id="member">
         <div class="container">
           <div class="d-flex mb-4">
-            <div class="col">
+            <div class="d-none d-lg-block col">
               <div class="bar"></div>
             </div>
             <h2>
               Come and just as <span id="next-number"></span>rd member!
             </h2>
-            <div class="col">
+            <div class="d-none d-lg-block col">
               <div class="bar"></div>
             </div>
           </div>
           <div class="row">
-            <div class="col-4">
-              <article class="card my-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
+            <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+              <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
                 <div class="embed-responsive-item">
-                  <div class="d-flex h-100">
+                  <div class="d-flex h-100 flex-column justify-content-center">
                     <div class="content">
                       <div class="info d-flex">
                         <div class="name">
@@ -271,7 +272,7 @@
                         Jumpei Taneichi
                       </h4>
                       <p>
-                        Founder of Shinonome inc.
+                        Founder of Shinonome, inc.
                       </p>
                     </div>
                     <div class="thumbnail" style="background-image: url('./img/taneichi.png'); background-position: left;" data-image="./img/taneichi.png"></div>
@@ -289,10 +290,10 @@
                 </div>
               </article>
             </div>
-            <div class="col-4">
-              <article class="card my-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
+            <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+              <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
                 <div class="embed-responsive-item">
-                  <div class="d-flex h-100">
+                  <div class="d-flex h-100 flex-column justify-content-center">
                     <div class="content">
                       <div class="info d-flex">
                         <div class="name">
@@ -307,8 +308,8 @@
                         Hiroyoshi Takahashi
                       </h4>
                       <p>
-                        Co-Founder of Shinonome inc.
-,                      </p>
+                        Co-Founder of Shinonome, inc.
+                      </p>
                     </div>
                     <div class="thumbnail" style="background-image: url('./img/takahashi.jpg'); background-position: 30%; background-size: 182%; background-position-y: 36%;" data-image="./img/takahashi.jpg"></div>
                   </div>
@@ -337,10 +338,10 @@
                 </div>
               </article>
             </div>
-            <div class="col-4">
-              <article class="card my-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
+            <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+              <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
                 <div class="embed-responsive-item">
-                  <div class="d-flex h-100">
+                  <div class="d-flex h-100 flex-column justify-content-center">
                     <div class="content">
                       <div class="info d-flex">
                         <div class="name">
@@ -370,10 +371,10 @@
                 </div>
               </article>
             </div>
-            <div class="col-4">
-                <article class="card my-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
+            <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+                <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
                   <div class="embed-responsive-item">
-                    <div class="d-flex h-100">
+                    <div class="d-flex h-100 flex-column justify-content-center">
                       <div class="content">
                         <div class="info d-flex">
                           <div class="name">
@@ -404,10 +405,10 @@
                   </div>
                 </article>
               </div>
-              <div class="col-4">
-                  <article class="card my-4 embed-responsive embed-responsive-21by9">
+              <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+                  <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9">
                     <div class="embed-responsive-item">
-                      <div class="d-flex h-100">
+                      <div class="d-flex h-100 flex-column justify-content-center">
                         <div class="content">
                           <div class="info d-flex">
                             <div class="name">
@@ -430,10 +431,10 @@
                     </div>
                   </article>
               </div>
-              <div class="col-4">
-                <article class="card my-4 embed-responsive embed-responsive-21by9">
+              <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+                <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9">
                   <div class="embed-responsive-item">
-                    <div class="d-flex h-100">
+                    <div class="d-flex h-100 flex-column justify-content-center">
                       <div class="content">
                         <div class="info d-flex">
                           <div class="name">
