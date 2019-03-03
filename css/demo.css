@@ -1414,4 +1414,7 @@ footer#mainFooter .pages-nav a {
   #news .slick-dots {
     bottom: -52px;
   }
+  footer#mainFooter:before {
+    top: -90px;
+  }
 }
