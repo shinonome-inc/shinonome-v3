@@ -51,21 +51,39 @@
 
   <!-- navigation -->
   <nav class="pages-nav">
-    <div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#page-about">About</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#Research-and-Development">Research &amp; Development</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#Hatcing-Egg">Hatching Egg</a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#page-training">Training</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Where to buy</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#company">Contact</a></div>
+    <div class="pages-nav__item">
+      <a class="link link--page" href="#page-home">Home</a>
+    </div>
+    <div class="pages-nav__item">
+      <a class="link link--page" href="#page-about">About</a>
+    </div>
+    <!-- <div class="pages-nav__item">
+      <a class="link link--page" href="#Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+    </div>
+    <div class="pages-nav__item">
+      <a class="link link--page" href="#Research-and-Development">Research &amp; Development</a>
+    </div>
+    <div class="pages-nav__item">
+      <a class="link link--page" href="#Hatcing-Egg">Hatching Egg</a>
+    </div>
+    <div class="pages-nav__item">
+      <a class="link link--page" href="#page-training">Training</a>
+    </div>
+    <div class="pages-nav__item pages-nav__item--small">
+      <a class="link link--page link--faded" href="#page-buy">Where to buy</a>
+    </div>
+    <div class="pages-nav__item pages-nav__item--small">
+      <a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a>
+    </div>
+    <div class="pages-nav__item pages-nav__item--small">
+      <a class="link link--page link--faded" href="#company">Contact</a>
+    </div>
     <div class="pages-nav__item pages-nav__item--social">
       <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
       <a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
       <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
       <a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
-    </div>
+    </div> -->
   </nav>
   <!-- /navigation-->
   <!-- pages stack -->
@@ -122,7 +140,7 @@
           <div class="row blobs">
             <div class="col-12 pb-0 mb-5 pb-md-5 mb-lg-0 col-lg-4 blob">
               <div class="content">
-                 <h2 class="text-effect mb-4 pt-5" data-link="Educational-Infrastructure">
+                 <h2 class="text-effect mb-4 pt-5" data-pending-link="Educational-Infrastructure">
                     <span style="color: rgb(209,78,102)">E</span>ducational<br/>Infrastructure
                 </h2>
                 <p>
@@ -143,7 +161,7 @@
             </div>
             <div class="col-12 pb-0 mb-5 pb-md-5 mb-lg-0 col-lg-4 blob">
               <div class="content">
-                 <h2 class="text-effect mb-4 pt-5" data-link="Research-and-Development">
+                 <h2 class="text-effect mb-4 pt-5" data-pending-link="Research-and-Development">
                     <span style="color: rgb(90,165,186)">R</span>esearch &<br/>Development
                 </h2>
                 <p>
@@ -164,7 +182,7 @@
             </div>
             <div class="col-12 pb-0 mb-5 pb-md-5 mb-lg-0 col-lg-4 blob">
               <div class="content">
-                <h2 class="text-effect mb-4 pt-5" data-link="Hatching-Egg">
+                <h2 class="text-effect mb-4 pt-5" data-pending-link="Hatching-Egg">
                     <span style="color: #fbc932">H</span>atching<br/>Egg
                 </h2>
                 <p>
@@ -186,19 +204,6 @@
           </div>
         </div>
       </section>
-      <section id="family">
-        <div class="container">
-          <h1 class="bp-header__title mb-5 mt-5">Worked with...</h1>
-        </div>
-        <ul>
-          <li><img src="./img/lixil.png" /></li>
-          <li><img src="./img/videx.png" /></li>
-          <li><img src="./img/waaq.png" /></li>
-          <li><img src="./img/meiden.png" /></li>
-          <li><img src="./img/sbcloud.png" /></li>
-          <li><img src="./img/hbi.png" /></li>
-        </ul>
-      </section>
       <section id="about">
         <div class="divider divider--curve"><svg viewBox="0 0 1695 72" preserveAspectRatio="none"><path d="M0 0c282.5 45 565 67.5 847.5 67.5S1412.5 45 1695 0v72H0V0z" fill="rgba(250, 250, 250, 1.0)" fill-rule="evenodd"></path></svg></div>
         <div class="about-background">
@@ -214,7 +219,7 @@
                   <h2 class="grid__item-title">Be a window connecting to something.</h2>
                   <h3 class="grid__item-subtitle">
                     <span>Through the window, <br> the dawn of the future can be seen.</span>
-                    <div class="grid__item-link" data-link="company">Read more</div>
+                    <div class="grid__item-link" data-pending-link="company">Read more</div>
                   </h3>
                 </div>
               </div>
@@ -372,183 +377,190 @@
               </article>
             </div>
             <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
-                <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
-                  <div class="embed-responsive-item">
-                    <div class="d-flex h-100 flex-column justify-content-center">
-                      <div class="content">
-                        <div class="info d-flex">
-                          <div class="name">
-                            Ex-Officer
-                          </div>
-                          <div class="date">
-                            <span class="mx-1">・</span>
-                            2016年8月25日 ~
-                          </div>
+              <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
+                <div class="embed-responsive-item">
+                  <div class="d-flex h-100 flex-column justify-content-center">
+                    <div class="content">
+                      <div class="info d-flex">
+                        <div class="name">
+                          Ex-Officer
                         </div>
-                        <h4>
-                          Seiichiro Hangai                        
-                        </h4>
-                        <p>
-                          Ex-Professor
-                        </p>
-                      </div>
-                      <div class="thumbnail" style="background-image: url('./img/hangai.jpg'); background-position: top right;" data-image="./img/hangai.jpg"></div>
-                    </div>
-                  </div>
-                  <div class="d-none detail">
-                    1975年、東京理科大学工学部電気工学科卒業。1981年同大学院博士課程修了。
-                    在学中は故大森俊一教授（電気計測）に師事。教員となってからは、故瀧 保夫教授（通信工学）に師事。
-                    2001年から東京理科大学工学部教授。1996年から1997年に米国スタンフォード大学CSLI客員研究員。
-                    現在は、オストバイエルン・レーゲンスブルグ工科大学（ドイツ）への交換留学を推進。
-                    専門は、音声、画像、生体認証のための信号処理。
-                    著書に、ディジタル信号処理、JPEG/MPEG完全理解、コンピュータ概論、バイオメトリクス教科書などがある。
-                  </div>
-                </article>
-              </div>
-              <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
-                  <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9">
-                    <div class="embed-responsive-item">
-                      <div class="d-flex h-100 flex-column justify-content-center">
-                        <div class="content">
-                          <div class="info d-flex">
-                            <div class="name">
-                              Ex-Officer
-                            </div>
-                            <div class="date">
-                              <span class="mx-1">・</span>
-                              2016年8月25日 ~
-                            </div>
-                          </div>
-                          <h4>
-                            Yuichi Katayori
-                          </h4>
-                          <p>
-                            Founder of TUSIMCo.
-                          </p>
+                        <div class="date">
+                          <span class="mx-1">・</span>
+                          2016年8月25日 ~
                         </div>
-                        <div class="thumbnail" style="background-image: url('./img/katayori.png'); background-position: right top;" data-image="./img/katayori.png"></div>
                       </div>
+                      <h4>
+                        Seiichiro Hangai                        
+                      </h4>
+                      <p>
+                        Ex-Professor
+                      </p>
                     </div>
-                  </article>
-              </div>
-              <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
-                <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9">
-                  <div class="embed-responsive-item">
-                    <div class="d-flex h-100 flex-column justify-content-center">
-                      <div class="content">
-                        <div class="info d-flex">
-                          <div class="name">
-                            Ex-Officer
-                          </div>
-                          <div class="date">
-                            <span class="mx-1">・</span>
-                            2019年1月1日 ~
-                          </div>
-                        </div>
-                        <h4>
-                          Hisanori Takata
-                        </h4>
-                        <p>
-                          Co-Founder of TUSIMCo.
-                        </p>
-                      </div>
-                      <div class="thumbnail" style="background-image: url('./img/takata.png'); background-position: top right;" data-image="./img/takata.png"></div>
-                      <div class="d-none detail">
-                      </div>
-                    </div>
+                    <div class="thumbnail" style="background-image: url('./img/hangai.jpg'); background-position: top right;" data-image="./img/hangai.jpg"></div>
                   </div>
-                </article>
-              </div>
-              <div class="col-4">
-                <article class="card my-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
-                  <div class="embed-responsive-item">
-                    <div class="d-flex h-100">
-                      <div class="content">
-                        <div class="info d-flex">
-                          <div class="name">
-                            Advisor
-                          </div>
-                          <div class="date">
-                            <span class="mx-1">・</span>
-                            2019年1月1日 ~
-                          </div>
-                        </div>
-                        <h4>
-                          Tatsuyuki Yasunaga
-                        </h4>
-                        <p>
-                          Co-Founder of TUSIMCo.
-                        </p>
-                      </div>
-                      <div class="thumbnail" style="background-image: url('./img/yasunaga.png'); background-position: top right;" data-image="./img/yasunaga.png"></div>
-                      <div class="d-none detail">
-                        元日本IBM執行役員, 元ソフトバンクテレコム執行役員, 元サンガードシステムズジャパン社長 
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-4">
-                <article class="card my-4 embed-responsive embed-responsive-21by9">
-                  <div class="embed-responsive-item">
-                    <div class="d-flex h-100">
-                      <div class="content">
-                        <div class="info d-flex">
-                          <div class="name">
-                            Advisor
-                          </div>
-                          <div class="date">
-                            <span class="mx-1">・</span>
-                            2019年1月1日 ~
-                          </div>
-                        </div>
-                        <h4>
-                          Monta Ido
-                        </h4>
-                        <p>
-                          Manager of regional <br/> revitalization.
-                        </p>
-                      </div>
-                      <div class="thumbnail" style="background-image: url('./img/ido.png'); background-position: top" data-image="./img/ido.png"></div>
-                      <div class="d-none detail">
-
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
+                </div>
+                <div class="d-none detail">
+                  1975年、東京理科大学工学部電気工学科卒業。1981年同大学院博士課程修了。
+                  在学中は故大森俊一教授（電気計測）に師事。教員となってからは、故瀧 保夫教授（通信工学）に師事。
+                  2001年から東京理科大学工学部教授。1996年から1997年に米国スタンフォード大学CSLI客員研究員。
+                  現在は、オストバイエルン・レーゲンスブルグ工科大学（ドイツ）への交換留学を推進。
+                  専門は、音声、画像、生体認証のための信号処理。
+                  著書に、ディジタル信号処理、JPEG/MPEG完全理解、コンピュータ概論、バイオメトリクス教科書などがある。
+                </div>
+              </article>
             </div>
+            <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+              <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9">
+                <div class="embed-responsive-item">
+                  <div class="d-flex h-100 flex-column justify-content-center">
+                    <div class="content">
+                      <div class="info d-flex">
+                        <div class="name">
+                          Ex-Officer
+                        </div>
+                        <div class="date">
+                          <span class="mx-1">・</span>
+                          2016年8月25日 ~
+                        </div>
+                      </div>
+                      <h4>
+                        Yuichi Katayori
+                      </h4>
+                      <p>
+                        Founder of TUSIMCo.
+                      </p>
+                    </div>
+                    <div class="thumbnail" style="background-image: url('./img/katayori.png'); background-position: right top;" data-image="./img/katayori.png"></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+              <article class="card my-2 my-md-4 embed-responsive embed-responsive-21by9">
+                <div class="embed-responsive-item">
+                  <div class="d-flex h-100 flex-column justify-content-center">
+                    <div class="content">
+                      <div class="info d-flex">
+                        <div class="name">
+                          Ex-Officer
+                        </div>
+                        <div class="date">
+                          <span class="mx-1">・</span>
+                          2019年1月1日 ~
+                        </div>
+                      </div>
+                      <h4>
+                        Hisanori Takata
+                      </h4>
+                      <p>
+                        Co-Founder of TUSIMCo.
+                      </p>
+                    </div>
+                    <div class="thumbnail" style="background-image: url('./img/takata.png'); background-position: top right;" data-image="./img/takata.png"></div>
+                    <div class="d-none detail">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 mb-1 pb-lg-0 mb-lg-0 col-md-6 col-lg-4">
+              <article class="card my-4 embed-responsive embed-responsive-21by9" data-toggle="modal" data-target="#memberDetail">
+                <div class="embed-responsive-item">
+                  <div class="d-flex h-100">
+                    <div class="content">
+                      <div class="info d-flex">
+                        <div class="name">
+                          Advisor
+                        </div>
+                        <div class="date">
+                          <span class="mx-1">・</span>
+                          2019年1月1日 ~
+                        </div>
+                      </div>
+                      <h4>
+                        Tatsuyuki Yasunaga
+                      </h4>
+                      <p>
+                        Strategic advisor
+                      </p>
+                    </div>
+                    <div class="thumbnail" style="background-image: url('./img/yasunaga.png'); background-position: top right;" data-image="./img/yasunaga.png"></div>
+                    <div class="d-none detail">
+                      元日本IBM執行役員, 元ソフトバンクテレコム執行役員, 元サンガードシステムズジャパン社長 
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- <div class="col-4">
+              <article class="card my-4 embed-responsive embed-responsive-21by9">
+                <div class="embed-responsive-item">
+                  <div class="d-flex h-100">
+                    <div class="content">
+                      <div class="info d-flex">
+                        <div class="name">
+                          Manager
+                        </div>
+                        <div class="date">
+                          <span class="mx-1">・</span>
+                          2019年1月1日 ~
+                        </div>
+                      </div>
+                      <h4>
+                        Monta Ido
+                      </h4>
+                      <p>
+                        Manager of regional <br/> revitalization.
+                      </p>
+                    </div>
+                    <div class="thumbnail" style="background-image: url('./img/ido.png'); background-position: top" data-image="./img/ido.png"></div>
+                    <div class="d-none detail">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div> -->
           </div>
         </div>          
       </section>
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
-              <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
-              </div>
-            </nav>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-home">Home</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-about">About</a>
+            </div>
+            <!-- <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="page-training">Training</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--social">
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+            </div> -->
+          </nav>
         </div>
       </footer>
     </div>
@@ -562,36 +574,132 @@
         </p>
       </header>
       <section>
-        <h1>hello</h1>
+        <div class="container">
+          <div class="row mb-5">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <th scope="row">会社名</th>
+                  <td>株式会社Shinonome</td>
+                </tr>
+                <tr>
+                  <th scope="row">設立日</th>
+                  <td>2016年8月25日</td>
+                </tr>
+                <tr>
+                  <th scope="row">資本金</th>
+                  <td>41,200千円(資本準備金含む)</td>
+                </tr>
+                <tr>
+                  <th scope="row">事業内容</th>
+                  <td>情報通信業 ・ 人材育成業</td>
+                </tr>
+                <tr>
+                  <th scope="row">事業所住所</th>
+                  <td>東京都千代田区飯田橋4-10-1 セントラルプラザ 2F オープンカレッジ ルーム7</td>
+                </tr>
+                <tr>
+                  <th scope="row">発起人</th>
+                  <td>種市 隼兵 ( 代表取締役CEO ) </td>
+                </tr>
+                <tr>
+                  <th scope="row">役員</th>
+                  <td>髙橋 弘至 ( 社内取締役CTO ) </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>片寄 裕市 ( 社外取締役 TUSIM 代表取締役 ) </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>高田 久徳 ( 社外取締役 TUSIM 取締役 ) </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>半谷 精一郎 ( 社外取締役 東京理科大学 元理事 ) </td>
+                </tr>
+                <tr>
+                  <th scope="row">アドバイザー</th>
+                  <td>小幡 健太郎 (アストマックス株式会社 常務取締役 ) </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>谷口 幸四郎 ( アストマックス株式会社 顧問) </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>安永 達幸 ( 元日本IBM執行役員, 元ソフトバンクテレコム執行役員, 元サンガードシステムズジャパン社長 ) </td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row"></th>
+                  <td>井戸 聞多 </td>
+                </tr> -->
+                <tr>
+                  <th scope="row"></th>
+                  <td>松田 大 ( 東京理科大学 情報システム課 課長 ) </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>牧野 恵美 ( 東京理科大学 経営学部 准教授 ) </td>
+                </tr>
+                <tr>
+                  <th scope="row">主要取引銀行</th>
+                  <td>第一勧業信用組合</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>三井住友銀行</td>
+                </tr>
+                <tr>
+                  <th scope="row">顧問税理士</th>
+                  <td>渡辺伸税理士事務所 渡辺 伸</td>
+                </tr>
+                <tr>
+                  <th scope="row">バックオフィス</th>
+                  <td>Back to Front 渡辺 快</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
-              <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
-              </div>
-            </nav>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-home">Home</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-about">About</a>
+            </div>
+            <!-- <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="page-training">Training</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--social">
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+            </div> -->
+          </nav>
         </div>
       </footer>
     </div>
@@ -606,31 +714,40 @@
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
-              <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
-              </div>
-            </nav>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-home">Home</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-about">About</a>
+            </div>
+            <!-- <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="page-training">Training</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--social">
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+            </div> -->
+          </nav>
         </div>
       </footer>
     </div>
@@ -645,29 +762,38 @@
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-home">Home</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-about">About</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="page-training">Training</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+            </div>
               <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
               </div>
             </nav>
         </div>
@@ -684,31 +810,40 @@
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
-              <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
-              </div>
-            </nav>
+          <div class="pages-nav__item">
+            <a class="link link--page" data-link="page-home">Home</a>
+          </div>
+          <div class="pages-nav__item">
+            <a class="link link--page" data-link="page-about">About</a>
+          </div>
+          <div class="pages-nav__item">
+            <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+          </div>
+          <div class="pages-nav__item">
+            <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+          </div>
+          <div class="pages-nav__item">
+            <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+          </div>
+          <div class="pages-nav__item">
+            <a class="link link--page" data-pending-link="page-training">Training</a>
+          </div>
+          <div class="pages-nav__item pages-nav__item--small">
+            <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+          </div>
+          <div class="pages-nav__item pages-nav__item--small">
+            <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+          </div>
+          <div class="pages-nav__item pages-nav__item--small">
+            <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+          </div>
+            <div class="pages-nav__item pages-nav__item--social">
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+            </div>
+          </nav>
         </div>
       </footer>
     </div>
@@ -723,31 +858,40 @@
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
-              <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
-              </div>
-            </nav>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-home">Home</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-about">About</a>
+            </div>
+            <!-- <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="page-training">Training</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--social">
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+              <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+            </div> -->
+          </nav>
         </div>
       </footer>
     </div>
@@ -762,29 +906,38 @@
       <footer class="footer">
           <div class="container">
             <nav class="pages-nav pages-nav--open">
-                <div class="pages-nav__item">
-                  <a class="link link--page" data-link="page-home">Home</a></div>
-                <div class="pages-nav__item">
-                  <a class="link link--page" data-link="page-about">About</a></div>
-                <div class="pages-nav__item">
-                  <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-                <div class="pages-nav__item">
-                  <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-                <div class="pages-nav__item">
-                  <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-                <div class="pages-nav__item">
-                  <a class="link link--page" data-link="page-training">Training</a></div>
-                <div class="pages-nav__item pages-nav__item--small">
-                  <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-                <div class="pages-nav__item pages-nav__item--small">
-                  <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-                <div class="pages-nav__item pages-nav__item--small">
-                  <a class="link link--page link--faded" data-link="company">Contact</a></div>
+              <div class="pages-nav__item">
+                <a class="link link--page" data-link="page-home">Home</a>
+              </div>
+              <div class="pages-nav__item">
+                <a class="link link--page" data-link="page-about">About</a>
+              </div>
+              <div class="pages-nav__item">
+                <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+              </div>
+              <div class="pages-nav__item">
+                <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+              </div>
+              <div class="pages-nav__item">
+                <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+              </div>
+              <div class="pages-nav__item">
+                <a class="link link--page" data-pending-link="page-training">Training</a>
+              </div>
+              <div class="pages-nav__item pages-nav__item--small">
+                <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+              </div>
+              <div class="pages-nav__item pages-nav__item--small">
+                <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+              </div>
+              <div class="pages-nav__item pages-nav__item--small">
+                <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+              </div>
                 <div class="pages-nav__item pages-nav__item--social">
-                  <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                  <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                  <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                  <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+                  <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+                  <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+                  <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+                  <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
                 </div>
               </nav>
           </div>
@@ -801,29 +954,38 @@
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-home">Home</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-about">About</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="page-training">Training</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+            </div>
               <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
               </div>
             </nav>
         </div>
@@ -840,29 +1002,38 @@
       <footer class="footer">
         <div class="container">
           <nav class="pages-nav pages-nav--open">
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-home">Home</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-about">About</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Research-and-Development">Research &amp; Development</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="Hatcing-Egg">Hatching Egg</a></div>
-              <div class="pages-nav__item">
-                <a class="link link--page" data-link="page-training">Training</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-buy">Where to buy</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="page-blog">Blog &amp; News</a></div>
-              <div class="pages-nav__item pages-nav__item--small">
-                <a class="link link--page link--faded" data-link="company">Contact</a></div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-home">Home</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-link="page-about">About</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Educational-Infrastructure">EDUCATIONAL INFRASTRUCTURE</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Research-and-Development">Research &amp; Development</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="Hatcing-Egg">Hatching Egg</a>
+            </div>
+            <div class="pages-nav__item">
+              <a class="link link--page" data-pending-link="page-training">Training</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-buy">Where to buy</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="page-blog">Blog &amp; News</a>
+            </div>
+            <div class="pages-nav__item pages-nav__item--small">
+              <a class="link link--page link--faded" data-pending-link="company">Contact</a>
+            </div>
               <div class="pages-nav__item pages-nav__item--social">
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-                <a class="link link--social link--faded" data-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+                <a class="link link--social link--faded" data-pending-link=""><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
               </div>
             </nav>
         </div>
@@ -905,16 +1076,6 @@
         console.log($(".detail",this).text())
       })
     })
-  </script>
-  <script>
-  	$(function(){
-      $('#family').infiniteslide({
-        // 'height': 150, //高さ
-        'speed': 30, //速さ
-        'direction' : 'left', //向き
-        'pauseonhover': false //マウスオーバーでストップ
-      });
-    });
   </script>
 	<script>
 		imagesLoaded( document.querySelectorAll('img'), () => {
